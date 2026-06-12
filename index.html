@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Erica & Emilio · 18 · IX · MMXXVI</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- FONDOS -->
+  <div class="paper-texture"></div>
+  <div class="watercolor-layer watercolor-1"></div>
+  <div class="watercolor-layer watercolor-2"></div>
+  <div class="watercolor-layer watercolor-3"></div>
+
+  <!-- ══ OVERLAY DE ENTRADA ══ -->
+  <div id="overlay">
+    <div class="overlay-bg">
+      <img src="images/photo-hero.jpg" alt="">
+    </div>
+    <div class="overlay-veil"></div>
+    <div class="overlay-content">
+      <span class="overlay-pre">Con amor · Una invitación especial</span>
+      <h1 class="overlay-names">
+        Erica
+        <span class="overlay-amp">&</span>
+        Emilio
+      </h1>
+      <span class="overlay-date">Viernes · 18 de Septiembre · 2026</span>
+      <div class="overlay-rule"></div>
+      <span class="overlay-cta">Toca para abrir</span>
+    </div>
+  </div>
+
+  <!-- ══ REPRODUCTOR VINYL ══ -->
+  <div id="player">
+    <div class="vinyl" id="vinyl"></div>
+    <div class="p-info">
+      <span class="p-title">Para Volverte a Decir</span>
+      <span class="p-artist">Arco</span>
+    </div>
+    <div class="waves off" id="waves">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <button class="p-btn" id="p-btn" type="button" aria-label="Reproducir / Pausar">▶</button>
+  </div>
+
+  <!-- ══ LOADER ══ -->
+  <div id="loader">
+    <div class="loader-content">Erica & Emilio</div>
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="bg-audio" loop preload="auto">
+    <source src="music/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ══ HERO ══ -->
+  <header class="hero">
+    <div class="hero-bg">
+      <img src="images/photo-hero.jpg" alt="Erica y Emilio">
+    </div>
+    <div class="hero-veil"></div>
+    <div class="hero-watercolor"></div>
+    <!-- Decoración botánica dentro del hero -->
+    <div class="hero-content">
+      <div class="hero-subtitle">NOS CASAMOS</div>
+      <h1 class="hero-title">
+        Erica
+        <span>&</span>
+        Emilio
+      </h1>
+      <div class="botanical-divider">❦</div>
+      <div class="hero-date">Viernes · 18 · Septiembre · 2026</div>
+      <!--<p class="hero-quote">
+      Con amor, les invitamos a celebrar
+    </p>
+    <a href="#countdown" class="hero-button">Descubrir</a>-->
+    </div>
+    <div class="scroll-indicator">↓</div>
+    <div class="hero-bottom-fade"></div>
+  </header>
+
+  <!-- ══ CITA ══ -->
+  <section class="section-quote reveal">
+    <div class="quote-inner">
+      <span class="quote-ornament">❦</span>
+      <blockquote class="quote-text">
+        Sin etiquetas nos conocimos;<br>
+        entre cerámica y cerveza nació una historia hecha a mano, con alma.<br>
+        La distancia fue grande,<br>
+        pero juntos cruzamos el mundo<br>
+        para unir nuestras vidas.
+      </blockquote>
+      <cite class="quote-ref">“Lo que Dios une, permanece.”</cite>
+    </div>
+  </section>
+
+  <main>
+    <!-- ══ CUENTA REGRESIVA ══ -->
+    <section id="countdown" class="section">
+      <div class="container">
+        <h2 class="section-title">Cuenta Regresiva</h2>
+        <div class="botanical-divider">❦</div>
+        <div class="countdown">
+          <div class="count-card">
+            <span id="months">00</span>
+            <small>MESES</small>
+          </div>
+          <div class="count-card">
+            <span id="days">00</span>
+            <small>DÍAS</small>
+          </div>
+          <div class="count-card">
+            <span id="hours">00</span>
+            <small>HORAS</small>
+          </div>
+          <div class="count-card">
+            <span id="minutes">00</span>
+            <small>MIN</small>
+          </div>
+          <div class="count-card">
+            <span id="seconds">00</span>
+            <small>SEG</small>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:50px">
+          <div class="cal-btn-wrap">
+            <button class="hero-button cal-main-btn" id="cal-toggle" type="button">
+              Añadir al Calendario
+            </button>
+            <div class="cal-dropdown" id="cal-dropdown">
+              <button class="cal-opt" id="cal-google" type="button">Google Calendar</button>
+              <button class="cal-opt" id="cal-apple" type="button">Apple Calendar</button>
+              <button class="cal-opt" id="cal-outlook" type="button">Outlook / ICS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ NUESTRA HISTORIA ══ -->
+    <section id="story" class="section gallery-section reveal">
+      <div class="container">
+        <h2 class="section-title">Nuestra Decisión</h2>
+        <div class="hero-divider"></div>
+        <p class="section-description">El día uno fueron nuestras miradas las que se encontraron.<br>
+          2113 días después, son nuestras vidas las que se unen para recorrer un mismo camino.<br>
+          Desde hoy caminamos de la mano,<br>
+          con el corazón lleno de recuerdos, de sueños<br>
+          y de un futuro que construiremos juntos.</p>
+        <div class="masonry-gallery">
+          <div class="gallery-item tall">
+            <img src="images/gallery-1.jpg" alt="Foto de pareja 1">
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-2.jpg" alt="Foto de pareja 2">
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-3.jpg" alt="Foto de pareja 3">
+          </div>
+          <div class="gallery-item wide">
+            <img src="images/gallery-4.jpg" alt="Foto de pareja 4">
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-5.jpeg" alt="Foto de pareja 5">
+          </div>
+          <div class="gallery-item tall">
+            <img src="images/gallery-6.jpg" alt="Foto de pareja 6">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ EL GRAN DÍA ══ -->
+    <section id="events" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">El Gran Día</h2>
+        <div class="hero-divider"></div>
+        <div class="event-grid">
+          <div class="event-card">
+            <img src="images/illustration1.png" alt="" class="event-illustration">
+            <h3>Ceremonia</h3>
+            <p>Parroquia San Joaquín y Santa Ana</p>
+            <p>Rionegro, Antioquia • 1:45 PM</p>
+            <a href="https://maps.app.goo.gl/rPVUbXNQTgNXuk2L7" class="premium-btn">Ver ubicación</a>
+          </div>
+          <div class="event-card">
+            <img src="images/illustration2.png" alt="" class="event-illustration">
+            <h3>Recepción</h3>
+            <p>Club El Prado</p>
+            <p>La Ceja, Antioquia • 6:00 PM</p>
+            <a href="https://maps.app.goo.gl/Tdxt4PJNhW6Xb13Y9" class="premium-btn">Cómo llegar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CRONOGRAMA ══ -->
+    <section id="timeline" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Cronograma</h2>
+        <div class="botanical-divider">❦</div>
+        <div class="timeline">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <img src="images/cronograma/ceremonia.png" alt="Ilustración ceremonia" class="timeline-illustration">
+            </div>
+            <h4>1:45 PM</h4>
+            <p>Ceremonia</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <img src="images/cronograma/coctel.png" alt="Ilustración cóctel" class="timeline-illustration">
+            </div>
+            <h4>4:30 PM</h4>
+            <p>Cóctel</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <img src="images/cronograma/recepcion.png" alt="Ilustración recepción" class="timeline-illustration">
+            </div>
+            <h4>6:00 PM</h4>
+            <p>Recepción</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ DRESS CODE ══ -->
+    <section id="dresscode" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Código de vestimenta</h2>
+        <div class="botanical-divider">❦</div>
+        <div class="dress-card">
+          <h3 class="dress-phrase">No hay código de<br>vestimenta obligatorio</h3>
+          <p class="dress-sub">solo te invitamos a lucir tu mejor sonrisa y a vestir algo especial para esta ocasión tan
+            importante</p>
+          <div class="dress-notes">
+            <div class="dress-note">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--sage)" stroke-width="1.8"
+                stroke-linecap="round">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+              <p>Como recomendación, <strong>evitar vestidos cortos</strong></p>
+            </div>
+            <div class="dress-note dress-note-reserved">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--gold)" stroke-width="1.8"
+                stroke-linecap="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              <p><strong>Blanco, beige, crema e ivory</strong> están reservados para los novios.</p>
+            </div>
+          </div>
+          <div class="color-palette">
+            <span class="color blanco"></span>
+            <span class="color beige"></span>
+            <span class="color crema"></span>
+            <span class="color ivory"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ ÁLBUM COMPARTIDO ══ -->
+    <section id="album" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Álbum de la Boda</h2>
+        <div class="botanical-divider">❦</div>
+        <p class="section-description">¡Sube tus fotos y comparte los recuerdos del día!</p>
+
+        <div class="album-wrap">
+          <div class="upload-zone" id="upload-zone">
+            <label for="photo-input"
+              style="cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:.8rem">
+              <svg width="44" height="44" fill="none" viewBox="0 0 24 24" stroke="var(--sage)" stroke-width="1.4"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="17 8 12 3 7 8" />
+                <line x1="12" y1="3" x2="12" y2="15" />
+              </svg>
+              <p class="upload-title">Subir fotos</p>
+              <span class="upload-hint">Arrastra aquí o toca para seleccionar · Varias fotos a la vez</span>
+              <button class="hero-button" type="button"
+                onclick="document.getElementById('photo-input').click()">Seleccionar fotos</button>
+            </label>
+            <input type="file" id="photo-input" accept="image/*" multiple style="display:none">
+          </div>
+
+          <div class="upload-list" id="upload-list"></div>
+
+          <div class="album-gallery-header">
+            <span class="album-gallery-label">FOTOS SUBIDAS</span>
+            <button class="gallery-reload" id="gallery-reload" type="button">↺ Actualizar</button>
+          </div>
+          <iframe class="drive-gallery-frame" id="gallery-frame"
+            src="https://drive.google.com/embeddedfolderview?id=1qyMq5CFMIaYVprPWW3rd5Je8ZyGmoA__#grid" height="460"
+            frameborder="0" allowfullscreen loading="lazy" title="Galería de la boda"></iframe>
+          <p class="drive-gallery-note">Las fotos tardan unos segundos en aparecer · Toca "Actualizar" para ver las
+            nuevas</p>
+        </div>
+      </div>
+    </section>
+
+<section id="regalos" class="section reveal"> <div class="container">
+    <div class="dress-card">
+      
+      <img src="images/icono-sobre.png" alt="Icono sobre" class="gift-icon">
+      
+      <h3 class="dress-phrase">Nuestro mejor regalo es tu presencia en este dia tan especial.</h3>
+      <p class="section-description">Si aparte desdeas darnos un detalle, puedes llevar tu sobre o da click en el
+        siguiente
+        botón:</p>
+      <a href="#" id="btn-transferencia" class="premium-btn">Hacer transferencia</a>
+    </div>
+  </div>
+</section>
+
+    <!-- ══ CONFIRMAR ASISTENCIA ══ -->
+    <section id="rsvp" class="section reveal">
+      <div class="container">
+        <div class="rsvp-card">
+          <h2>Confirmar Asistencia</h2>
+          <p>Esperamos compartir este día contigo. Confirma antes del 8 de Agosto de 2026.</p>
+
+          <form class="rsvp-form" id="rsvp-form" novalidate>
+
+            <div class="attend-group">
+              <label class="attend-opt">
+                <input type="radio" name="attend" value="ceremonia" required>
+                <span>Asisto a la ceremonia</span>
+              </label>
+              <label class="attend-opt">
+                <input type="radio" name="attend" value="recepcion">
+                <span>Asisto a la recepción</span>
+              </label>
+              <label class="attend-opt">
+                <input type="radio" name="attend" value="ambos">
+                <span>Asisto a ambos ♡</span>
+              </label>
+              <label class="attend-opt">
+                <input type="radio" name="attend" value="no">
+                <span>No podré asistir</span>
+              </label>
+            </div>
+
+            <input type="text" id="rsvp-name" placeholder="Nombre completo" required autocomplete="name">
+            <select id="rsvp-count">
+              <option value="1">Solo yo</option>
+              <option value="2">2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 o más personas</option>
+            </select>
+            <textarea id="rsvp-msg" placeholder="Mensaje para los novios"></textarea>
+            <input type="text" id="rsvp-song" placeholder="Una canción que no puede faltar">
+
+            <button type="submit" class="premium-btn" id="rsvp-submit">Confirmar</button>
+            <div class="form-msg" id="form-msg"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="floral-left"><img src="assets/floral-left.svg" alt=""></div>
+    <div class="floral-right"><img src="assets/floral-right.svg" alt=""></div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>Erica & Emilio</h2>
+      <p>Gracias por acompañarnos en este momento tan especial.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <div id="modal-transferencia" class="modal-overlay">
+    <div class="modal-content">
+      <span class="modal-close" id="close-modal">&times;</span>
+      <h3 class="modal-title">Datos Bancarios</h3>
+      <div class="botanical-divider">❦</div>
+      <p class="modal-desc">Cuenta de Ahorros Bancolombia</p>
+      <p class="modal-account">55660184391</p>
+      <p class="modal-thanks">¡Muchas gracias!</p>
+    </div>
+  </div>
+</body>
+
+</html>
