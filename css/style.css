@@ -1768,3 +1768,45 @@ color:var(--navy);
   max-width: 80px; /* Ajusta el tamaño máximo según tu imagen */
   height: auto;
 }
+/* ══════════════════════════════════════════
+   AJUSTES DE ACCESIBILIDAD: LETRAS MÁS GRANDES
+══════════════════════════════════════════ */
+
+/* Pantalla de inicio (Overlay) */
+.overlay-pre { font-size: 1.1rem !important; }
+.overlay-date { font-size: clamp(0.95rem, 2.5vw, 1.2rem) !important; }
+.overlay-cta { font-size: 0.85rem !important; }
+
+/* Sección Principal (Hero) */
+.hero-subtitle { font-size: 1.1rem !important; }
+.hero-date { font-size: 1.2rem !important; }
+.hero-button { font-size: 1rem !important; }
+
+/* Cuenta Regresiva */
+.count-card small { font-size: 0.85rem !important; font-weight: 600; }
+
+/* Cita / Frase */
+.quote-ref { font-size: 0.95rem !important; }
+
+/* Código de vestimenta */
+.dress-sub { font-size: 1.25rem !important; }
+.dress-note { font-size: 1.15rem !important; }
+.dress-palette-label { font-size: 0.95rem !important; }
+
+/* Álbum de fotos compartido */
+.upload-hint { font-size: 1.1rem !important; }
+.up-name { font-size: 0.95rem !important; }
+.up-status { font-size: 1rem !important; }
+.album-gallery-label { font-size: 0.95rem !important; }
+.drive-gallery-note { font-size: 1.05rem !important; }
+
+/* Reproductor de Vinilo */
+.p-title { font-size: 0.95rem !important; }
+.p-artist { font-size: 0.95rem !important; }
+
+/* Ajustes específicos para móviles */
+@media(max-width: 768px) {
+  .hero-subtitle { font-size: 1rem !important; }
+  .overlay-pre { font-size: 1rem !important; }
+  .hero-button { font-size: 1rem !important; }
+}
